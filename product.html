@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Onojie | Product</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icons for social media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- This link helps keyboard users skip the menu -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with logo and navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <!-- The logo links back to the home page -->
+            <a href="index.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    srcset="
+                        images/logo-small.png 103w,
+                        images/logo.png 206w
+                    "
+                    sizes="(max-width: 768px) 103px, 206px"
+                    alt="Bella Onojie logo"
+                >
+            </a>
+  
+            <!-- Main menu for different pages -->
+            <!-- Mobile menu button -->
+            <button class="menu-toggle" type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="main-menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-links" id="main-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="product.html" class="active" aria-current="page">Product</a>
+                </li>
+                <li>
+                    <a href="index.html#faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    
+    <!-- Main content of the product page -->
+    <main id="main-content">
+
+        <!-- Product page introduction -->
+        <section class="product-intro">
+            <h1>Discover Your Next Favorite Meal</h1>
+            <p>Fresh flavors, delicious choices, delivered to you.</p>
+        </section>
+
+        <!-- Food menu section -->
+        <section class="food-menu" aria-labelledby="menu-heading">
+            <h2 id="menu-heading">Explore Our Menu</h2>
+
+            <div class="food-grid">
+
+                <!-- Burger -->
+                <article class="food-card">
+                    <img src="images/burger-large.jpg"
+                        srcset="images/burger-small.jpg 300w,
+                                images/burger-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Double beef burger with cheese and vegetables">
+                    <h3>Classic Burger</h3>
+                    <p>Juicy beef, melted cheese, and fresh vegetables.</p>
+                    <span class="food-price">$14.99</span>
+                </article>
+
+                <!-- Pancakes -->
+                <article class="food-card">
+                    <img src="images/pancakes-large.jpg"
+                        srcset="images/pancakes-small.jpg 300w,
+                                images/pancakes-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Pancakes topped with strawberries and blueberries">
+                    <h3>Berry Pancakes</h3>
+                    <p>Fluffy pancakes with fresh berries and syrup.</p>
+                    <span class="food-price">$12.99</span>
+                </article>
+
+                <!-- Pasta -->
+                <article class="food-card">
+                    <img src="images/pasta-large.jpg"
+                        srcset="images/pasta-small.jpg 300w,
+                                images/pasta-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Penne pasta with tomato and meat sauce">
+                    <h3>Italian Pasta</h3>
+                    <p>Penne pasta tossed in a rich tomato sauce.</p>
+                    <span class="food-price">$16.99</span>
+                </article>
+
+                <!-- Pizza -->
+                <article class="food-card">
+                    <img src="images/pizza-large.jpg"
+                        srcset="images/pizza-small.jpg 300w,
+                                images/pizza-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Cheese pizza with olives and vegetables">
+                    <h3>Special Pizza</h3>
+                    <p>Freshly baked pizza with cheese and toppings.</p>
+                    <span class="food-price">$18.99</span>
+                </article>
+
+                <!-- Rice Bowl -->
+                <article class="food-card">
+                    <img src="images/rice-bowl-large.jpg"
+                        srcset="images/rice-bowl-small.jpg 300w,
+                                images/rice-bowl-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Rice bowl with chicken, corn, and vegetables">
+                    <h3>Chicken Rice Bowl</h3>
+                    <p>Grilled chicken, rice, and colorful vegetables.</p>
+                    <span class="food-price">$15.99</span>
+                </article>
+
+                <!-- Salad -->
+                <article class="food-card">
+                    <img src="images/salad-large.jpg"
+                        srcset="images/salad-small.jpg 300w,
+                                images/salad-large.jpg 600w"
+                        sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+                        alt="Fresh green salad with tomatoes and herbs">
+                    <h3>Fresh Garden Salad</h3>
+                    <p>Crisp greens, tomatoes, and fresh herbs.</p>
+                    <span class="food-price">$11.99</span>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <!-- Logo -->
+        <a href="index.html" class="footer-logo">
+            <img
+                src="images/logo.png"
+                srcset="
+                    images/logo-small.png 103w,
+                    images/logo.png 206w
+                "
+                sizes="(max-width: 768px) 103px, 206px"
+                alt="Bella Onojie logo"
+            >
+        </a>
+
+        <!-- Social media links -->
+        <div class="social-links">
+            <a href="https://twitter.com/"
+               aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="https://www.facebook.com/"
+               aria-label="Facebook">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/"
+               aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="copyright">
+            Copyright 2020 Bella Onojie.com
+        </p>
+
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+    </script>
+
+</body>
+</html>

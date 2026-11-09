@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Onojie | Contact</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <!-- Icons for social media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <!-- This link helps keyboard users skip the menu -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
+    <!-- Header with logo and navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <!-- The logo links back to the home page -->
+            <a href="index.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    srcset="
+                        images/logo-small.png 103w,
+                        images/logo.png 206w
+                    "
+                    sizes="(max-width: 768px) 103px, 206px"
+                    alt="Bella Onojie logo"
+                >
+            </a>
+             
+            <!-- Main menu for different pages -->
+            <!-- Mobile menu button -->
+            <button class="menu-toggle" type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="main-menu">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+
+            <ul class="nav-links" id="main-menu">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="product.html">Product</a>
+                </li>
+                <li>
+                    <a href="index.html#faq">FAQ</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="active" aria-current="page">Contact</a>
+                </li>
+            </ul>
+
+        </nav>
+    </header>
+
+    
+    <!-- Main content of the contact page -->  
+    <main id="main-content">
+
+        <!-- Contact page -->
+        <section class="contact-section">
+
+            <h1>Get in Touch</h1>
+            <p class="contact-intro">
+                Have a question? We'd love to hear from you.
+            </p>
+
+            <div class="contact-container">
+
+                <!-- Contact information -->
+                <div class="contact-info">
+                    <h2>Contact Information</h2>
+                    <p>Feel free to reach out to us anytime.</p>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        <a href="mailto:hello@bellaonojie.com">
+                            hello@bellaonojie.com
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone" aria-hidden="true"></i>
+                        <a href="tel:+11234567890">
+                            +1 (123) 456-7890
+                        </a>
+                    </div>
+
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                        <span>Ottawa, Canada</span>
+                    </div>
+                </div>
+
+                <!-- Contact form -->
+                <div class="contact-form">
+                    <h2>Send Us a Message</h2>
+                
+                    <form id="contact-form">
+                        <label for="contact-name">Name</label>
+                        <input type="text" id="contact-name" name="name" required>
+
+                        <label for="contact-email">Email</label>
+                        <input type="email" id="contact-email" name="email" required>
+
+                        <label for="contact-message">Message</label>
+                        <textarea id="contact-message" name="message" rows="5" required></textarea>
+
+                        <button type="submit">Send Message</button>
+
+                        <p id="form-status" role="status" aria-live="polite" hidden></p>
+                    </form>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="site-footer">
+
+        <!-- Logo -->
+        <a href="index.html" class="footer-logo">
+            <img
+                src="images/logo.png"
+                srcset="
+                    images/logo-small.png 103w,
+                    images/logo.png 206w
+                "
+                sizes="(max-width: 768px) 103px, 206px"
+                alt="Bella Onojie logo"
+            >
+        </a>
+
+        <!-- Social media links -->
+        <div class="social-links">
+            <a href="https://twitter.com/"
+               aria-label="Twitter">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+
+            <a href="https://www.facebook.com/"
+               aria-label="Facebook">
+                <i class="fa-brands fa-facebook-square"></i>
+            </a>
+
+            <a href="https://www.instagram.com/"
+               aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+
+        <!-- Copyright -->
+        <p class="copyright">
+            Copyright 2020 Bella Onojie.com
+        </p>
+
+    </footer>
+
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('open');
+            menuToggle.setAttribute('aria-expanded', isOpen);
+        });
+
+
+        /* Contact form demo */
+        const contactForm = document.querySelector('#contact-form');
+        const formStatus = document.querySelector('#form-status');
+
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            formStatus.textContent = 'This is a demo form. Your message has not been sent.';
+            formStatus.hidden = false;
+        });
+    </script>
+
+</body>
+</html>
